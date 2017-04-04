@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manual>
+	<page>
+		<topic>Example</topic>
+		<summary>A filler to show the structure of the man page</summary>
+		<details>There are no details, this is a place holder this is the
+			second part
+		</details>
+	</page> <!-- End page entry -->
+	<page>
+		<topic>404</topic>
+		<summary>Page not found.</summary>
+		<details>Please try again or default to the search feature</details>
+	</page> <!-- End page entry -->
+</manual>

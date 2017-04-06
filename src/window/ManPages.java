@@ -33,6 +33,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.awt.Color;
+import javax.swing.JScrollPane;
+import java.awt.GridLayout;
 
 public class ManPages {
 
@@ -78,28 +80,28 @@ public class ManPages {
 		// Information Pane
 		JPanel panel = new JPanel();
 		splitPane.setRightComponent(panel);
-		panel.setLayout(new BorderLayout(0, 0));
-
+		panel.setLayout(new GridLayout(0, 1, 0, 1));
+		
+		JScrollPane topicScroll = new JScrollPane();
+		panel.add(topicScroll);
+		
+		JScrollPane summaryScroll = new JScrollPane();
+		panel.add(summaryScroll);
+		
+		JScrollPane detailsScroll = new JScrollPane();
+		panel.add(detailsScroll);
+	
 		JTextPane topicPane = new JTextPane();
-		topicPane.setBackground(new Color(245, 245, 245));
-		topicPane.setToolTipText("The name and usage of this command");
 		topicPane.setEditable(false);
-		topicPane.setText("topicPane");
-		panel.add(topicPane, BorderLayout.NORTH);
-
+		topicScroll.setViewportView(topicPane);
+		
 		JTextPane summaryPane = new JTextPane();
-		summaryPane.setBackground(new Color(255, 248, 220));
-		summaryPane.setToolTipText("The description of this command");
 		summaryPane.setEditable(false);
-		summaryPane.setText("summaryPane");
-		panel.add(summaryPane, BorderLayout.CENTER);
-
+		summaryScroll.setViewportView(summaryPane);
+		
 		JTextPane detailsPane = new JTextPane();
-		detailsPane.setBackground(new Color(245, 245, 245));
-		detailsPane.setToolTipText("The syntx, flags and other details of this command");
 		detailsPane.setEditable(false);
-		detailsPane.setText("detailsPane");
-		panel.add(detailsPane, BorderLayout.SOUTH);
+		detailsScroll.setViewportView(detailsPane);
 
 		// Selection Pane
 		JPanel panel2 = new JPanel();

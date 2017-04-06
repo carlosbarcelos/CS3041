@@ -73,6 +73,7 @@ public class ManPages {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 800, 480);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setTitle("Man Pages 2.0");
 
 		JSplitPane splitPane = new JSplitPane();
 		frame.getContentPane().add(splitPane, BorderLayout.CENTER);
@@ -92,14 +93,17 @@ public class ManPages {
 		panel.add(detailsScroll);
 	
 		JTextPane topicPane = new JTextPane();
+		topicPane.setBackground(new Color(255, 228, 196));
 		topicPane.setEditable(false);
 		topicScroll.setViewportView(topicPane);
 		
 		JTextPane summaryPane = new JTextPane();
+		summaryPane.setBackground(new Color(255, 228, 196));
 		summaryPane.setEditable(false);
 		summaryScroll.setViewportView(summaryPane);
 		
 		JTextPane detailsPane = new JTextPane();
+		detailsPane.setBackground(new Color(255, 228, 196));
 		detailsPane.setEditable(false);
 		detailsScroll.setViewportView(detailsPane);
 
@@ -109,6 +113,7 @@ public class ManPages {
 		panel2.setLayout(new BorderLayout(0, 0));
 
 		JTree tree = new JTree();
+		tree.setBackground(new Color(176, 224, 230));
 		tree.setModel(new DefaultTreeModel(
 				new DefaultMutableTreeNode("Commands") {
 					{
@@ -146,10 +151,12 @@ public class ManPages {
 		panel2.add(splitPane_1, BorderLayout.NORTH);
 
 		textField = new JTextField();
+		textField.setBackground(new Color(176, 224, 230));
 		splitPane_1.setLeftComponent(textField);
 		textField.setColumns(15);
 
 		JButton searchButton = new JButton("Search");
+		searchButton.setBackground(new Color(176, 224, 230));
 		splitPane_1.setRightComponent(searchButton);
 		searchButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {

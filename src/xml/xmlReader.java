@@ -69,6 +69,7 @@ public class xmlReader {
 	public ArrayList<String> returnPage(String pName){
 		ArrayList <String> elements = new ArrayList<String>();
 		try{
+			// Find the right based on the input String pName
 			NodeList nList = parsedFile.getElementsByTagName("page");
 			int pIndex = this.index(nList, pName);
 			Node pNode = nList.item(pIndex);
@@ -76,6 +77,7 @@ public class xmlReader {
 			String pTopic = pElement.getElementsByTagName("topic").item(0).getTextContent();
 			String pSummary = pElement.getElementsByTagName("summary").item(0).getTextContent();
 			String pDetails = pElement.getElementsByTagName("details").item(0).getTextContent();
+			// Put the parts of the page in an ArrayList
 			elements.add(pTopic);			
 			elements.add(pSummary);
 			elements.add(pDetails);

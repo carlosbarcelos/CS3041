@@ -45,7 +45,7 @@ public class xmlReader {
 			DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 			DocumentBuilder db = dbf.newDocumentBuilder();
 			Document document = db.parse(file);
-			document.getDocumentElement().normalize();
+			document.getDocumentElement().normalize();			
 			return document;
 		}
 		catch (Exception e){
@@ -76,7 +76,7 @@ public class xmlReader {
 			String pTopic = pElement.getElementsByTagName("topic").item(0).getTextContent();
 			String pSummary = pElement.getElementsByTagName("summary").item(0).getTextContent();
 			String pDetails = pElement.getElementsByTagName("details").item(0).getTextContent();
-			elements.add(pTopic);
+			elements.add(pTopic);			
 			elements.add(pSummary);
 			elements.add(pDetails);
 			return elements;
@@ -102,11 +102,4 @@ public class xmlReader {
 	    }
 		return i-1; // Return the last element, the not-found page
 	}
-
-	// Read a manual->page->topic
-
-	// Read a manual->page->summary
-
-	// Read a manual->page->details
-
 }

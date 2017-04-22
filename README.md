@@ -1,4 +1,4 @@
-# HCI
+HCI
 Human Computer Interaction class code repository
 
 Project 4

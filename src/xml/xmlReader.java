@@ -71,6 +71,9 @@ public class xmlReader {
 		try{
 			// Find the right based on the input String pName
 			NodeList nList = parsedFile.getElementsByTagName("page");
+			if(pName.equals("HELP")){ // Add easy to use help screen
+				pName = "Topic = HELP This first row specifies the name of the command searched for.";
+			}
 			int pIndex = this.index(nList, pName);
 			Node pNode = nList.item(pIndex);
 			Element pElement = (Element) pNode;

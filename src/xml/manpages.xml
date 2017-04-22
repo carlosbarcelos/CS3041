@@ -2,11 +2,13 @@
 
 <manual>
 	<page>
-		<topic>Command Name</topic>
-		<summary>Command Summary</summary>
-		<details>Command Details</details>
+		<topic>Topic = HELP This first row specifies the name of the command searched for.</topic>
+		<summary>Summary
+		This second row gives a description and usage information on the command searched for.</summary>
+		<details>Details
+		This third row gives more information on the sytax, flags and command specific information.
+		Type a command name in the search bar and press the "Search" button to open the command's Man page.</details>
 	</page> <!-- End page entry -->
-
 	<page>
 		<topic>ls</topic>
 		<summary>
@@ -166,28 +168,104 @@
 			FORMAT1
 			newline FORMAT2, FORMAT1 applies to non-recent files and
 			FORMAT2 to
-			recent files; if STYLE is prefixed with 'posix-', STYLE takes effect
+			recent files; if STYLE is prefixed with 'posix-', STYLE
+			takes effect
 			only outside the POSIX locale
 			-t
 			sort by modification time
 			-T, --tabsize=COLS
 			assume tab stops at each COLS instead of 8
 			-u
-			with -lt: sort by, and show, access time with -l: show access time and
+			with
+			-lt: sort by, and show, access time with -l: show access time and
 			sort by name otherwise: sort by access time
 			-U
-			do not sort; list entries in directory order
+			do not sort; list
+			entries in directory order
 			-v
-			natural sort of (version) numbers within text
+			natural sort of (version) numbers within
+			text
 			-w, --width=COLS
 			assume screen width instead of current value
 			-x
 			list entries by lines instead of by columns
 			-X
-			sort alphabetically by entry extension
+			sort alphabetically by
+			entry extension
 			-1
 			list one file per line
 		</details>
+	</page> <!-- End page entry -->
+	<page>
+		<topic>cd</topic>
+		<summary>Change the working directory
+			cd [new_directory]
+		</summary>
+		<details></details>
+	</page> <!-- End page entry -->
+	<page>
+		<topic>mkdir</topic>
+		<summary>Make Directories
+			mkdir [OPTION]... DIRECTORY...
+		</summary>
+		<details>
+			Create the DIRECTORY(ies), if they do not already exist.
+
+			Mandatory arguments to long options are mandatory for short options too.
+
+			-m, --mode=MODE
+			set file mode (as in chmod), not a=rwx - umask
+			-p, --parents
+			no error if existing, make parent directories as needed
+			-v, --verbose
+			print a message for each created directory
+			-Z, --context=CTX
+			set the SELinux security context of each created directory to CTX
+			--help
+			display this help and exit
+			--version
+			output version information and exit
+		</details>
+	</page> <!-- End page entry -->
+	<page>
+		<topic>rmdir</topic>
+		<summary>Remove empty directories
+		rmdir [OPTION]... DIRECTORY...</summary>
+		<details>
+		Remove the DIRECTORY(ies), if they are empty.
+
+--ignore-fail-on-non-empty
+ignore each failure that is solely because a directory
+is non-empty
+-p, --parents
+remove DIRECTORY and its ancestors; e.g., 'rmdir -p a/b/c' is similar to 'rmdir a/b/c a/b a'
+-v, --verbose
+output a diagnostic for every directory processed
+--help
+display this help and exit
+--version
+output version information and exit
+		</details>
+	</page> <!-- End page entry -->
+	<page>
+		<topic>alias</topic>
+		<summary>THERE IS NO CONTENT HERE</summary>
+		<details>THERE IS NO CONTENT HERE</details>
+	</page> <!-- End page entry -->
+	<page>
+		<topic>ar</topic>
+		<summary>THERE IS NO CONTENT HERE</summary>
+		<details>THERE IS NO CONTENT HERE</details>
+	</page> <!-- End page entry -->
+	<page>
+		<topic>basename</topic>
+		<summary>THERE IS NO CONTENT HERE</summary>
+		<details>THERE IS NO CONTENT HERE</details>
+	</page> <!-- End page entry -->
+	<page>
+		<topic>batch</topic>
+		<summary>THERE IS NO CONTENT HERE</summary>
+		<details>THERE IS NO CONTENT HERE</details>
 	</page> <!-- End page entry -->
 	<page>
 		<topic>404</topic>

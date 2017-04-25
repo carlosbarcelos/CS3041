@@ -64,7 +64,7 @@ public class ManPages {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		reader = new xmlReader("./src/xml/manpages.xml"); // The XML file location goes here
+		reader = new xmlReader("manpages.xml"); // The XML file location goes here
 		frame = new JFrame();
 		frame.setBackground(Color.WHITE);
 		frame.setBounds(100, 100, 1000, 550);

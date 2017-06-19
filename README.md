@@ -25,22 +25,22 @@ The design required the use of menus and buttons. There is a tree structured men
 
 Finally, it was specified that the interface be kept simple. I believe that this interface achieves that. The interface in compact with very few parts to it. There are two buttons in total and very few actions that can be taken. This is not to say that the interface is not feature rich, an example of this is the double click feature. Keeping advanced features invisible allows new users to easily grasp the initial interface while giving advanced users tools to assist them.
 
-![Man Page Interface](/src/images/manpage.jpg?raw=true "Figure 1 The man page interface with numbered parts")
+![Man Page Interface](/src/images/manpage.JPG?raw=true "Figure 1 The man page interface with numbered parts")
 
 The following state diagram states at the Welcome screen and move to any of the other screens from there. The oval states represent the possible sates of the system. The rectangles represent the method for getting to each of the states. The arrows going between the states represent paths to get between each state. Note that once the Welcome Screen is left there is no way to get back to it. Also, each of the three main states – the Man Page, the Page Not Found and the Help Page – have paths between each other such that each one state can get to the other two.
 
-![State Transition Diagram](/src/images/statediagram.jpg?raw=true "Figure 2 State transition diagram")
+![State Transition Diagram](/src/images/statediagram.JPG?raw=true "Figure 2 State transition diagram")
 
  ## Content Diagram
  The content diagram below represents a logical view of the system as a while. The two directional arrows imply that the two items can access each other and flow through each other. For example, while on a Man Page it is possible to Enter Search Details to get to a Page Not Found, a Help Page or another Man Page.
  
-![Content Diagram](/src/images/contentdiagram.jpg?raw=true "Figure 3 Content diagram")
+![Content Diagram](/src/images/contentdiagram.JPG?raw=true "Figure 3 Content diagram")
  
  # Testing
  ## Initial Testing
  Working out the design on paper (see attached Project 4: Rough Design) I realized that there was no Help Page. I planned for there to be usage information when the application was first opened but I realized that once this information went away it could not be called back. As a result, I added a help button to the final design. The help button does not display the same information as the Welcome Page but it is similar enough to get the user going in the right direction on how to use the application.
  
- ![Help Button](/src/images/helpbutton.jpg?raw=true)
+ ![Help Button](/src/images/helpbutton.JPG?raw=true)
 
 While paper testing, I realized that all the elements had the same background color and were not well spaced. This led me to put more white space that originally intended between the three information panes and use a different background color for the search pane. Using colors and whitespace (as seen in the design above) created a more visually distinctive design than the original paper prototype.
 
@@ -57,7 +57,7 @@ I then took this design one step further and implemented a “double click to se
 
 Working with the prototype design I was also able to observe how the interface window felt relative to my computer monitor. For example, I could alter and observe the initial window size and position. Because I could try different window designs, I decided to have the window open in the middle of the screen and be large enough to see but not so large that it took up the entire screen. This design decision was a result of using the interface while still trying to gather information from the rest of the screen; the testing environment I just described is similar to the environment in which the user would be using this program, having it one screen while not obstructing the entire screen. However, the exact sizing and positioning is entirely subject and because of this it entirely customizable through the interface.
 
-![Program in use](/src/images/inuse.jpg?raw=true "Figure 4 Viewing the interface as an unobtrusive addition to the user's main screen")
+![Program in use](/src/images/inuse.JPG?raw=true "Figure 4 Viewing the interface as an unobtrusive addition to the user's main screen")
 
  # Design Rationale
  ## The user and their task
@@ -72,20 +72,20 @@ Finally, the “Help” button is at the bottom of the selection pane so that it
  ## Analysis of interaction
 The system has a smooth feeling to it. When the program first opens, the user is greeted by a Welcome Page. This screen describes what each piece of the information pane lists. This information is non-recoverable once the user selects any sort but the information can still be viewed using mouse over text.
 
-![Welcome Screen](/src/images/welcomescreen.jpg?raw=true "Figure 5 Welcome screen when program is initially launched")
+![Welcome Screen](/src/images/welcomescreen.JPG?raw=true "Figure 5 Welcome screen when program is initially launched")
 
 The user will then select a command to find a man page for. This can be done by the double click method or manual text entry. When a command is successfully searched for the commands information is displayed in the information pane in each of the layered parts.
 
-![Successful Search](/src/images/successfulsearch.jpg?raw=true "Figure 6 Result of a successful command search")
+![Successful Search](/src/images/successfulsearch.JPG?raw=true "Figure 6 Result of a successful command search")
 
 To get a clearer view of all the commands available, the user may expand the command tree. The tree is fully expandable and collapsible like other tree interfaces of a similar nature. Each branch indicates whether it has been expanded by changing from an un-expanded to an expanded icon.
 
-![Tree View](/src/images/treeview.jpg?raw=true "Figure 7 Expanded tree view of commands. "..." implies that there are more commands but they have not been yet implemented")
+![Tree View](/src/images/treeview.JPG?raw=true "Figure 7 Expanded tree view of commands. "..." implies that there are more commands but they have not been yet implemented")
 
 If the user searches for a command which does not exist or misspells a command they will be greeted with the “404’ page. 404 was used to specify that the command was not found because of the user’s familiarity with webpages. The page instructs the user to “Please try again”. When the 404 page first appears, the system creates an audible tone to alert the user that something has gone wrong. The tone used is the default alert tone to ensure that the user is not confused as to what made the noise or what the noise means.
 
-![Command Not Found](/src/images/commandNotFound.jpg?raw=true "Figure 8 Command not found page")
+![Command Not Found](/src/images/commandNotFound.JPG?raw=true "Figure 8 Command not found page")
 
 Finally, if the user needs more help they can select the “Help” button or search for “HELP” in the search bar. This will bring up the help page explaining what each section of the information pane relates to and how to make a successful search.
 
-![Help Screen](/src/images/helpscreen.jpg?raw=true "Figure 9 Help screen. Obtained by searching for "HELP" or clicking the "Help" button")
+![Help Screen](/src/images/helpscreen.JPG?raw=true "Figure 9 Help screen. Obtained by searching for "HELP" or clicking the "Help" button")
